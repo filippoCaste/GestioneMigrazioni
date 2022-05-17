@@ -1,0 +1,33 @@
+Evento (tempo T, Country, nPersone)
+
+T=1
+Evento (1, Italy, 1000)
+	- 500: stanziali in Italia;
+	- 4 Stati confinanti: 125 persone per ogni stato confinante
+			--> crea eventi di ingresso
+				
+				T=2
+				Evento(2, Francia, 125)
+					- 62: stanziali in France;
+					- 63 si dividono nei 5 confinanti: 12 per stato e 3 stanziali(resto della divisione)
+						--> eventi al T=3
+				
+				Evento(2, Svizzera, 125)
+					- 62 stanziali in svizzera
+					- 63 nei 4 stati confinanti: 15 per stato + 3 stanziali
+						--> eventi al T=3
+				Evento(2, Austria, 125)
+				Evento(2, Slovenia, 125)
+					
+
+							T=3
+							Evento(3, Spagna, 12)
+							Evento(3, Italia, 12)
+							Evento(3, Olanda, 12)
+							Evento(3, Belgio, 12)
+							Evento(3, Germania, 12)
+							-------------------------
+							Evento(3, Francia, 15)
+							Evento(3, Austria, 15)
+							Evento(3, Italia, 15)
+							Evento(3, Germania, 15)
